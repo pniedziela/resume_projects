@@ -31,6 +31,15 @@ def query_2(data):
 
 st.set_page_config(page_title="PokeDEX")
 
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 with st.sidebar:
     st.write("With PokeDEX you will no longer struggle with any type of Pokemon! :blue[Try it out!]")
 

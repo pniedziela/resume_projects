@@ -10,6 +10,16 @@ social_media_icons = SocialMediaIcons(social_media_links)
 
 def main():
     st.set_page_config(page_title="Main")
+    
+    hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    </style>
+
+    """
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+    
     st.markdown("<h1 style='text-align: center; color: white;'>Przemysław Niedziela</h1>", unsafe_allow_html=True)
     st.markdown("<h5 style='text-align: center; color: gray;'>Software Engineer | ML Engineer | AI Enthusiast | PhD Candidate</h5>", unsafe_allow_html=True)
 

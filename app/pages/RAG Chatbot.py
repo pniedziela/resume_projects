@@ -108,6 +108,15 @@ def get_response_llm(llm,vectorstore_faiss,query):
 
 st.set_page_config("Chat PDF")
 
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 st.header("Chat with PDFs :books:")
 pdffile = st.file_uploader("Upload your PDFs here:", type="pdf", accept_multiple_files=True)
 st.write("Click :blue['Vectors Update'] on the right side of the screen once files are uploaded!")
