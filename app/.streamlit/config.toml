@@ -1,0 +1,7 @@
+[server]
+enableXsrfProtection = false
+enableCORS = false
+maxUploadSize = 5
+[theme]
+base="dark"
+primaryColor="purple"
