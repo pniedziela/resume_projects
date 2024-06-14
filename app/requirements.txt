@@ -1,5 +1,5 @@
 boto3
-streamlit==1.35.0
+streamlit
 st_social_media_links
 langchain_community
 langchain
