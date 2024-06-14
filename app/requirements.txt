@@ -6,3 +6,4 @@ langchain
 numpy
 pillow==9.4.0
 PyPDF2 
+python-docx
