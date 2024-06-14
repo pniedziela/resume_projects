@@ -1,0 +1,7 @@
+boto3
+streamlit
+st_social_media_links
+langchain_community
+langchain
+numpy
+pillow==9.4.0
