@@ -117,20 +117,26 @@ with st.sidebar:
     st.write("Update Or Create Vector Store:")
     
     if st.button("Vectors Update"):
-        with st.spinner("Processing..."):
-            docs = data_ingestion(pdffile)
-            get_vector_store(docs)
-            st.success("Done")
+        if pdffile:
+            with st.spinner("Processing..."):
+                docs = data_ingestion(pdffile)
+                get_vector_store(docs)
+                st.success("Done")
+        else: 
+            st.write(':red[You have to selected files to upload first!]')
 
 
 if st.button("Llama2 Output"):
-    with st.spinner("Processing..."):
-        faiss_index = FAISS.load_local("faiss_index", bedrock_embeddings, allow_dangerous_deserialization=True)
-        llm=get_llama2_llm()
-        
-        #faiss_index = get_vector_store(docs)
-        st.write(get_response_llm(llm,faiss_index,user_question))
-        st.success("Done")
+    if user_question:
+        with st.spinner("Processing..."):
+            faiss_index = FAISS.load_local("faiss_index", bedrock_embeddings, allow_dangerous_deserialization=True)
+            llm=get_llama2_llm()
+            
+            #faiss_index = get_vector_store(docs)
+            st.write(get_response_llm(llm,faiss_index,user_question))
+            st.success("Done")
+    else: 
+        st.write(':red[You have to ask some question first! :smirk:]')
         
 st.divider()
 
