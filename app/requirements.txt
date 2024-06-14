@@ -5,3 +5,4 @@ langchain_community
 langchain
 numpy
 pillow==9.4.0
+PyPDF2 
