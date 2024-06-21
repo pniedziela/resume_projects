@@ -149,9 +149,9 @@ if st.button("Llama2 Output"):
         
 st.divider()
 
-st.header("How it works?")
+st.header("How does it works?")
 st.write("The chatbot is consisted of two parts: ")
-st.write("1. The knoweledge base loader - it takes pdfs, reads them, splits into chunks, :blue[creates embeddings] (using :blue[Amazon Titan]) and puts to vector store.")
+st.write("1. The knoweledge base loader - it takes pdfs, reads them, splits into chunks, :blue[creates embeddings] (using :blue[Amazon Titan]) and puts to a vector store.")
 st.write("2. Designed prompt takes user query together with provided context (which is consisted of most similar (by default 3) chunks of text from vector store) and inputs to :blue[LLAMA2].")
 
 

@@ -30,8 +30,8 @@ def main():
 
     st.write(
         """:blue[Hi!] This page serves as a container and repository for my hobby software projects :blue[(you can find
-        them all on the left side of the screen on the separate menu)]. I use them as a practical intro to all new algorithms/software/technologies 
-        I wish to learn/get comfortable with. Feel free to try them, just keep in mind these are not commercial and :rainbow[usually] I don't try to beat Google with them! :)"""
+        them all on the left side of the screen on a separate menu)]. I use them as a practical intro to all new algorithms/software/technologies 
+        I wish to learn/get comfortable with. Feel free to try them, just keep in mind these are not commercial and :rainbow[usually] I don't try to beat OpenAI with them! :)"""
     )
     st.divider()
     social_media_icons.render()
