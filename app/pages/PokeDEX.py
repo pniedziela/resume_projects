@@ -90,7 +90,7 @@ if img:
 
 st.divider()
 
-st.header("How it works?")
+st.header("How does it works?")
 st.write('The PokeDEX is consisted of three separate modules, namely: Image-Text Captioning, Type Classificator and RAG LLM.')
 st.write('1. :blue[Image Captioning] : that\'s the first line that you can see under the upladed image. The BLIP model was finetuned on 833 Image-Text pairs of pokemons (I guess there are more Pokemons than that, but I\'m not a Pokemon trainer tho :smirk:) and deployend on HuggingFace Inference Endpoints (that\'s a really cheap option for this case scenario).')
 st.write('2. :blue[Classification] : Straight after the image description the classification comes into the play (you can see it in this ":red[It has to be.. ]" line). For this task I selected very simple vit-b-16 and trained it on 6991 labeled pokemon images.')
