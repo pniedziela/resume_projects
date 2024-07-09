@@ -119,7 +119,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.header("Chat with PDFs :books:")
 pdffile = st.file_uploader("Upload your PDFs here:", type="pdf", accept_multiple_files=True)
-st.write("Click :blue['Vectors Update'] on the right side of the screen once files are uploaded!")
+st.write("Click :blue['Vectors Update'] on the left side of the screen once files are uploaded!")
 user_question = st.text_input("Ask a Question from the PDF Files")
 
 with st.sidebar:
